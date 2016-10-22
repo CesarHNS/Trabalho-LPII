@@ -1,0 +1,310 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="14.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{A2985EBE-DAB0-46C9-95C5-4423B8F78EC8}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Login</RootNamespace>
+    <AssemblyName>Login</AssemblyName>
+    <TargetFrameworkVersion>v4.5.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.DirectoryServices" />
+    <Reference Include="System.Windows.Forms.DataVisualization" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="AdmLogin.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AdmLogin.Designer.cs">
+      <DependentUpon>AdmLogin.cs</DependentUpon>
+    </Compile>
+    <Compile Include="AdmManutencao.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AdmManutencao.Designer.cs">
+      <DependentUpon>AdmManutencao.cs</DependentUpon>
+    </Compile>
+    <Compile Include="AdmRelatorios.Cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AdmRelatorios.Designer.Cs">
+      <DependentUpon>AdmRelatorios.Cs</DependentUpon>
+    </Compile>
+    <Compile Include="AdmTrocaSenha.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AdmTrocaSenha.Designer.cs">
+      <DependentUpon>AdmTrocaSenha.cs</DependentUpon>
+    </Compile>
+    <Compile Include="AquisicaoCotacao.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AquisicaoCotacao.Designer.cs">
+      <DependentUpon>AquisicaoCotacao.cs</DependentUpon>
+    </Compile>
+    <Compile Include="AquisicaoFornecedor.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AquisicaoFornecedor.Designer.cs">
+      <DependentUpon>AquisicaoFornecedor.cs</DependentUpon>
+    </Compile>
+    <Compile Include="AquisicaoPedido.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AquisicaoPedido.Designer.cs">
+      <DependentUpon>AquisicaoPedido.cs</DependentUpon>
+    </Compile>
+    <Compile Include="AquisicaoRequisicao.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AquisicaoRequisicao.Designer.cs">
+      <DependentUpon>AquisicaoRequisicao.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Autoridades.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Autoridades.Designer.cs">
+      <DependentUpon>Autoridades.cs</DependentUpon>
+    </Compile>
+    <Compile Include="fmBusca.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="fmBusca.Designer.cs">
+      <DependentUpon>fmBusca.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CatalogacaoAutoridades.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CatalogacaoAutoridades.Designer.cs">
+      <DependentUpon>CatalogacaoAutoridades.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CatalogacaoBibliografica.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CatalogacaoBibliografica.Designer.cs">
+      <DependentUpon>CatalogacaoBibliografica.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CatalogacaoEtiquetas.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CatalogacaoEtiquetas.Designer.cs">
+      <DependentUpon>CatalogacaoEtiquetas.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CatalogacaoImportacao.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CatalogacaoImportacao.Designer.cs">
+      <DependentUpon>CatalogacaoImportacao.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CatalogacaoMoverRegistros.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CatalogacaoMoverRegistros.Designer.cs">
+      <DependentUpon>CatalogacaoMoverRegistros.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CatalogacaoVocabulario.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CatalogacaoVocabulario.Designer.cs">
+      <DependentUpon>CatalogacaoVocabulario.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Circulacao.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Circulacao.Designer.cs">
+      <DependentUpon>Circulacao.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CirculacaoAcesso.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CirculacaoAcesso.Designer.cs">
+      <DependentUpon>CirculacaoAcesso.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CirculacaoCarteirinha.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CirculacaoCarteirinha.Designer.cs">
+      <DependentUpon>CirculacaoCarteirinha.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CirculacaoEmprestimo.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CirculacaoEmprestimo.Designer.cs">
+      <DependentUpon>CirculacaoEmprestimo.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CirculacaoReserva.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CirculacaoReserva.Designer.cs">
+      <DependentUpon>CirculacaoReserva.cs</DependentUpon>
+    </Compile>
+    <Compile Include="BuscaBiblio.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="BuscaBiblio.Designer.cs">
+      <DependentUpon>BuscaBiblio.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="TelaInicial.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="TelaInicial.Designer.cs">
+      <DependentUpon>TelaInicial.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Login.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Login.Designer.cs">
+      <DependentUpon>Login.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Vocabulario.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Vocabulario.Designer.cs">
+      <DependentUpon>Vocabulario.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="AdmLogin.resx">
+      <DependentUpon>AdmLogin.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AdmManutencao.resx">
+      <DependentUpon>AdmManutencao.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AdmRelatorios.resx">
+      <DependentUpon>AdmRelatorios.Cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AdmTrocaSenha.resx">
+      <DependentUpon>AdmTrocaSenha.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AquisicaoCotacao.resx">
+      <DependentUpon>AquisicaoCotacao.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AquisicaoFornecedor.resx">
+      <DependentUpon>AquisicaoFornecedor.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AquisicaoPedido.resx">
+      <DependentUpon>AquisicaoPedido.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AquisicaoRequisicao.resx">
+      <DependentUpon>AquisicaoRequisicao.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Autoridades.resx">
+      <DependentUpon>Autoridades.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="fmBusca.resx">
+      <DependentUpon>fmBusca.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CatalogacaoAutoridades.resx">
+      <DependentUpon>CatalogacaoAutoridades.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CatalogacaoBibliografica.resx">
+      <DependentUpon>CatalogacaoBibliografica.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CatalogacaoEtiquetas.resx">
+      <DependentUpon>CatalogacaoEtiquetas.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CatalogacaoImportacao.resx">
+      <DependentUpon>CatalogacaoImportacao.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CatalogacaoMoverRegistros.resx">
+      <DependentUpon>CatalogacaoMoverRegistros.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CatalogacaoVocabulario.resx">
+      <DependentUpon>CatalogacaoVocabulario.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Circulacao.resx">
+      <DependentUpon>Circulacao.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CirculacaoAcesso.resx">
+      <DependentUpon>CirculacaoAcesso.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CirculacaoCarteirinha.resx">
+      <DependentUpon>CirculacaoCarteirinha.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CirculacaoEmprestimo.resx">
+      <DependentUpon>CirculacaoEmprestimo.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CirculacaoReserva.resx">
+      <DependentUpon>CirculacaoReserva.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="BuscaBiblio.resx">
+      <DependentUpon>BuscaBiblio.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="TelaInicial.resx">
+      <DependentUpon>TelaInicial.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Login.resx">
+      <DependentUpon>Login.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Vocabulario.resx">
+      <DependentUpon>Vocabulario.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="ClassDiagram1.cd" />
+    <None Include="ClassDiagram2.cd" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
