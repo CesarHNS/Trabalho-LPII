@@ -10,23 +10,11 @@ using System.Windows.Forms;
 
 namespace Login
 {
-    public partial class Autoridades : Form
+    public partial class BuscaDistribuida : Form
     {
-        public Autoridades()
+        public BuscaDistribuida()
         {
             InitializeComponent();
-        }
-
-        
-
-        private void Autoridades_Load(object sender, EventArgs e)
-        {
-           
-        }
-
-        private void button1_Click(object sender, EventArgs e)
-        {
-            this.Close();
         }
     }
 }

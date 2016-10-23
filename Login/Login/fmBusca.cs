@@ -84,5 +84,23 @@ namespace Login
         {
             labelBibliografica.BackColor = Color.RoyalBlue;
         }
+
+        private void labelAutoridades_Click(object sender, EventArgs e)
+        {
+            BuscaAutor mostraBuscaAutor = new BuscaAutor();
+            mostraBuscaAutor.Show();
+        }
+
+        private void labelVocabulario_Click(object sender, EventArgs e)
+        {
+            BuscaVocabulario mostraBuscaVocabulario = new BuscaVocabulario();
+            mostraBuscaVocabulario.Show();
+        }
+
+        private void labelDistribuida_Click(object sender, EventArgs e)
+        {
+            BuscaDistribuida mostraBuscaDistribuida = new BuscaDistribuida();
+            mostraBuscaDistribuida.Show();
+        }
     }
 }

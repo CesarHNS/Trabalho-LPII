@@ -10,16 +10,11 @@ using System.Windows.Forms;
 
 namespace Login
 {
-    public partial class Vocabulario : Form
+    public partial class BuscaAutor : Form
     {
-        public Vocabulario()
+        public BuscaAutor()
         {
             InitializeComponent();
-        }
-
-        private void button1_Click(object sender, EventArgs e)
-        {
-            Close();
         }
     }
 }

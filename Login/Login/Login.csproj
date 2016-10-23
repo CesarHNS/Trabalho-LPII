@@ -96,11 +96,17 @@
     <Compile Include="AquisicaoRequisicao.Designer.cs">
       <DependentUpon>AquisicaoRequisicao.cs</DependentUpon>
     </Compile>
-    <Compile Include="Autoridades.cs">
+    <Compile Include="BuscaAutor.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Autoridades.Designer.cs">
-      <DependentUpon>Autoridades.cs</DependentUpon>
+    <Compile Include="BuscaAutor.Designer.cs">
+      <DependentUpon>BuscaAutor.cs</DependentUpon>
+    </Compile>
+    <Compile Include="BuscaDistribuida.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="BuscaDistribuida.Designer.cs">
+      <DependentUpon>BuscaDistribuida.cs</DependentUpon>
     </Compile>
     <Compile Include="fmBusca.cs">
       <SubType>Form</SubType>
@@ -194,11 +200,11 @@
     <Compile Include="Login.Designer.cs">
       <DependentUpon>Login.cs</DependentUpon>
     </Compile>
-    <Compile Include="Vocabulario.cs">
+    <Compile Include="BuscaVocabulario.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Vocabulario.Designer.cs">
-      <DependentUpon>Vocabulario.cs</DependentUpon>
+    <Compile Include="BuscaVocabulario.Designer.cs">
+      <DependentUpon>BuscaVocabulario.cs</DependentUpon>
     </Compile>
     <EmbeddedResource Include="AdmLogin.resx">
       <DependentUpon>AdmLogin.cs</DependentUpon>
@@ -224,8 +230,11 @@
     <EmbeddedResource Include="AquisicaoRequisicao.resx">
       <DependentUpon>AquisicaoRequisicao.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Autoridades.resx">
-      <DependentUpon>Autoridades.cs</DependentUpon>
+    <EmbeddedResource Include="BuscaAutor.resx">
+      <DependentUpon>BuscaAutor.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="BuscaDistribuida.resx">
+      <DependentUpon>BuscaDistribuida.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="fmBusca.resx">
       <DependentUpon>fmBusca.cs</DependentUpon>
@@ -281,8 +290,8 @@
     <EmbeddedResource Include="Login.resx">
       <DependentUpon>Login.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Vocabulario.resx">
-      <DependentUpon>Vocabulario.cs</DependentUpon>
+    <EmbeddedResource Include="BuscaVocabulario.resx">
+      <DependentUpon>BuscaVocabulario.cs</DependentUpon>
     </EmbeddedResource>
     <None Include="ClassDiagram1.cd" />
     <None Include="ClassDiagram2.cd" />

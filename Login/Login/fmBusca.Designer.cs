@@ -89,6 +89,7 @@
             this.labelVocabulario.Size = new System.Drawing.Size(82, 16);
             this.labelVocabulario.TabIndex = 5;
             this.labelVocabulario.Text = "Vocabulário";
+            this.labelVocabulario.Click += new System.EventHandler(this.labelVocabulario_Click);
             this.labelVocabulario.MouseEnter += new System.EventHandler(this.labelVocabulario_MouseEnter);
             this.labelVocabulario.MouseLeave += new System.EventHandler(this.labelVocabulario_MouseLeave);
             // 
@@ -110,6 +111,7 @@
             this.labelDistribuida.Size = new System.Drawing.Size(76, 16);
             this.labelDistribuida.TabIndex = 7;
             this.labelDistribuida.Text = "Distribuída";
+            this.labelDistribuida.Click += new System.EventHandler(this.labelDistribuida_Click);
             this.labelDistribuida.MouseEnter += new System.EventHandler(this.labelDistribuida_MouseEnter);
             this.labelDistribuida.MouseLeave += new System.EventHandler(this.labelDistribuida_MouseLeave);
             // 
@@ -155,6 +157,7 @@
             this.labelAutoridades.Size = new System.Drawing.Size(84, 16);
             this.labelAutoridades.TabIndex = 3;
             this.labelAutoridades.Text = "Autoridades";
+            this.labelAutoridades.Click += new System.EventHandler(this.labelAutoridades_Click);
             this.labelAutoridades.MouseEnter += new System.EventHandler(this.labelAutoridades_MouseEnter);
             this.labelAutoridades.MouseLeave += new System.EventHandler(this.labelAutoridades_MouseLeave);
             // 
